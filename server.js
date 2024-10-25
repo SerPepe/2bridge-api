@@ -1,10 +1,14 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3003;
 
 const SIDESHIFT_API_URL = 'https://sideshift.ai/api/v2';
 const SIDESHIFT_API_KEY = '09a670d0198998d1813981bd9fe23904';
+
+// Enable CORS for all routes and origins
+app.use(cors());
 
 app.use(express.json());
 
