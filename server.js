@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3003;
 
 const SIDESHIFT_API_URL = 'https://sideshift.ai/api/v2';
 const SIDESHIFT_API_KEY = '09a670d0198998d1813981bd9fe23904';
